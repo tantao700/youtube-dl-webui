@@ -8,7 +8,7 @@ LONG_DESCRIPTION = 'Another webui for youtube-dl, powered by youtube-dl'
 
 setup (
         name='youtube_dl_webui',
-        version='rolling',
+        version='0.0.1',
         packages=['youtube_dl_webui'],
         license='GPL-2.0',
         author='d0u9, yuanyingfeiyu',
@@ -16,6 +16,7 @@ setup (
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         include_package_data=True,
+        package_data={'': ['logging.json','schema.sql','static/**/*','static/font-awesome/*/**.*','templates/*']},
         zip_safe=False,
         install_requires=[
             'Flask>=0.2',
